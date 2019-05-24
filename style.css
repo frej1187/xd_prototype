@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background-color: #EA5045;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header .logo {
+    color: #ffffff;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+
+}
+
+header nav {
+    float: right;
+
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+
+}
+
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-size: 2rem;
+
+
+}
+
+.profile_icon {
+    float: right;
+    margin-top: calc((50px - 16px) / 2);
+    margin-right: 16px;
+}
+
+.menu_toggle {
+    color: #ffffff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 0 20px;
+    }
+
+    .menu_toggle {
+        display: block;
+    }
+
+    header nav {
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 50px);
+        background-color: #3F3140;
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+    }
+
+    header nav.active {
+        left: 0;
+    }
+
+    header nav ul {
+        display: block;
+        text-align: center;
+        padding-top: 25px;
+    }
+
+}
+
+@media (min-width: 992px) {
+    header nav ul li a:hover {
+        color: #F58E81;
+        background-color: #ffffff;
+
+    }
+}
