@@ -21,3 +21,11 @@ function toggleMenu() {
         document.querySelector("header .menu_toggle").textContent = "☰";
     }
 }
+
+
+document.querySelector(".theme .theme_descr").addEventListener("click", toggleAssignments);
+
+function toggleAssignments() {
+    console.log("toggleAssignments");
+    this.closest(".theme").classList.toggle("open");
+}
