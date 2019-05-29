@@ -8,17 +8,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="upload_page">
     <header>
         <div class="logo">
-            <img src="assets/kea_logo.svg" alt="kea logo">
+            <a href="dashboard.html"><img src="assets/kea_logo.svg" alt="kea logo"></a>
         </div>
 
         <nav>
             <ul>
                 <li><a href="#aktuelt">Aktuelt</a></li>
                 <li><a href="#skema">Skema</a></li>
-                <li><a href="#afleveringer">Afleveringer</a></li>
+                <li><a href="assignments.html">Afleveringer</a></li>
                 <li><a href="#materialer">Materialer</a></li>
                 <li><a href="#chat">Chat</a></li>
                 <li><a href="#indstillinger">Indstillinger</a></li>
@@ -29,5 +29,20 @@
             <img src="assets/profile.svg" alt="profil ikon">
         </div>
     </header>
+    <div class="section_wrapper">
+        <form class="upload_form">
+            <h1>Upload</h1>
+            <p class="date_from"><time datetime="2019-05-28 00:00">Fra: 28-05-2019 kl. 00:00</time></p>
+            <p class="date_to"><time datetime="2019-05-31 23:59">Til: 31-05-2019 kl. 23:59</time></p>
+            <h2>Opgave</h2>
+            <input type="text" value="04.01.01 - Opgavebeskrivelse - Design sprint">
+            <h2>Indsæt aflevering</h2>
+            <input type="url" value="http://fpj.dk/kea/01-web/02-html/01_02_03_styleguide/index.html">
+            <div class="preview_container"><button class="preview_url">Preview</button></div>
+            <h2>Gruppeaflevering</h2>
+            <input type="text" value="Freja, Cathrine, Rosa">
+            <input type="submit" value="Aflever">
+        </form>
+    </div>
     <script src="script.js"></script>
 </body></html>

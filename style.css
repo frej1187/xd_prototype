@@ -13,6 +13,7 @@ body {
 
 }
 
+/*-------header-------*/
 header {
     position: fixed;
     top: 0;
@@ -30,7 +31,6 @@ header .logo {
     line-height: 50px;
     font-size: 24px;
     float: left;
-
 }
 
 header nav {
@@ -77,13 +77,17 @@ header nav ul li a {
 
 }
 
+/*------- Header slut-------*/
+
+
+/*------assignment side-------*/
+
 .section_wrapper {
     margin: 20px;
 }
 
 h2 {
     color: #EA5045;
-
 }
 
 .next_ass,
@@ -120,8 +124,8 @@ h2 {
     display: block;
 }
 
-h3,
-p {
+.assignments h3,
+.assignments p {
     margin: 5px;
 }
 
@@ -130,6 +134,222 @@ p {
 .section_previous {
     margin-top: 40px;
 }
+
+
+
+/*-----login-----*/
+
+.login {
+    padding-top: 0;
+    background-color: #f4f2f2;
+}
+
+.login header {
+    height: 150px;
+    position: relative;
+}
+
+.login header .logo img {
+    width: 30vw;
+    max-width: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.login input[type="submit"],
+.login .login_facebook {
+    display: block;
+    width: 80vw;
+    max-width: 500px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 25px;
+    border: none;
+    margin: 0 auto 15px;
+    color: #ea5045;
+}
+
+.login input:focus {
+    outline: none;
+}
+
+
+.login .label_save_login {
+    display: block;
+    width: 80vw;
+    max-width: 500px;
+    margin: 0 auto 15px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.login .label_save_login .save_login {
+    display: none;
+}
+
+.login .label_save_login .new_checkbox {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    vertical-align: middle;
+    margin-right: 10px;
+    position: relative;
+}
+
+.login .label_save_login input:checked ~ .new_checkbox::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    top: 5px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: #ea5045;
+}
+
+.login input[type="submit"] {
+    background-color: #ea5045;
+    color: #ffffff;
+    font-weight: bold;
+
+}
+
+.login .login_facebook {
+    background-color: #ffffff;
+    color: #ea5045;
+    text-align: center;
+    position: relative;
+}
+
+.login .login_facebook::before {
+    position: absolute;
+    left: 25px;
+    top: 15px;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-image: url(assets/facebook.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.login .forgot_password {
+    display: block;
+    text-align: center;
+}
+
+/*-------login slut-------*/
+
+/*-------upload assignment-----*/
+
+.upload_page {
+    background-color: #f4f2f2;
+}
+
+.upload_page .date_from,
+.upload_page .date_to {
+    font-size: 1.4rem;
+    margin: 5px 0;
+    font-weight: bold;
+}
+
+.upload_page input[type="text"],
+.upload_page input[type="url"],
+.upload_page input[type="submit"] {
+    display: block;
+    width: 80vw;
+    max-width: 500px;
+    height: 50px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    border: none;
+    color: #ea5045;
+}
+
+.preview_container {
+    text-align: right;
+}
+
+.upload_page .preview_url {
+    display: inline-block;
+    width: auto;
+    height: 40px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 2px solid #ea5045;
+    color: #ea5045;
+    margin: 0 0 10px;
+}
+
+.upload_page input:focus {
+    outline: none;
+}
+
+.upload_page input[type="submit"] {
+    background-color: #ea5045;
+    color: #ffffff;
+}
+
+.upload_page h2 {
+    color: #000000;
+}
+
+/*-------upload assignment slut----*/
+
+
+/*-----dashboard start-----*/
+
+
+
+.container {
+    background-color: #FAF7F7;
+    display: grid;
+    grid-template-columns: 125px 125px 125px;
+    grid-template-rows: 125px 125px 125px 125px 125px 125px;
+    grid-gap: 10px;
+    justify-content: center;
+    padding: 20px;
+    color: #EA847C;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+a {
+    color: #EA847C;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.item {
+    background-color: #ffffff;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    padding: 23px 0
+}
+
+.tech {
+    grid-column: 1 / span 2;
+    font-size: 20px;
+}
+
+.aktuelt {
+    grid-column: 2 / span 2;
+    grid-row: 4 / span 2;
+    font-size: 40px;
+}
+
+/*------------Header-------*/
 
 @media (max-width: 991px) {
     header {
