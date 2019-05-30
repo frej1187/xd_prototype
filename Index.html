@@ -4,12 +4,29 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="noindex" name="robots">
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <script src="script.js"></script>
-</body>
+<body class="login">
+    <header>
+        <div class="logo">
+            <img src="assets/kea_logo.svg" alt="kea logo">
+        </div>
+    </header>
+    <div class="section_wrapper">
+        <form action="dashboard.html">
+            <input type="email" placeholder="Indtast din e-mail">
+            <input type="password" placeholder="Indtast password">
+            <label class="label_save_login"><input class="save_login" type="checkbox">
+                <span class="new_checkbox"></span>Husk mig
+            </label>
+            <input type="submit" value="Log ind">
+            <a class="login_facebook" href="dashboard.html">Log ind med Facebook</a>
+        </form>
+        <a class="forgot_password" href="#">Jeg har glemt mit password</a>
 
-</html>
+    </div>
+    <script src="script.js"></script>
+</body></html>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="noindex" name="robots">
     <title>Afleveringer</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +26,15 @@
                 <li><a href="#indstillinger">Indstillinger</a></li>
             </ul>
         </nav>
-        <div class="menu_toggle">☰</div>
+        <div class="menu_toggle">
+            <!-- Tre spans til at lave stregerne i burger menuen -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logout_icon">
+            <a href="index.html"><img src="assets/logout.svg" alt="log ud ikon"></a>
+        </div>
         <div class="profile_icon">
             <img src="assets/profile.svg" alt="profil ikon">
         </div>
@@ -50,9 +59,9 @@
             <div class="upload_ass">
                 <h3>Aflever</h3>
                 <p>Tirsdag d. 21/5/19 inden kl. 22.00</p>
-                <div class="upload_icon">
+                <a href="assignments-upload.html" class="upload_icon">
                     <img src="assets/upload.svg" alt="upload ikon">
-                </div>
+                </a>
             </div>
         </div>
 
@@ -124,6 +133,4 @@
 
 
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>

@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="noindex" name="robots">
     <title>Forside</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -24,30 +25,36 @@
                 <li><a href="#indstillinger">Indstillinger</a></li>
             </ul>
         </nav>
-        <div class="menu_toggle">☰</div>
+        <div class="menu_toggle">
+            <!-- Tre spans til at lave stregerne i burger menuen -->
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="logout_icon">
+            <a href="index.html"><img src="assets/logout.svg" alt="log ud ikon"></a>
+        </div>
         <div class="profile_icon">
             <img src="assets/profile.svg" alt="profil ikon">
         </div>
     </header>
     <div class="container">
 
-        <div class="item materialer"><img src="assets/dashboard/Folder.svg">Materialer</div>
-        <div class="item skema"><img src="assets/dashboard/Calendar.svg">Skema</div>
-        <div class="item not"><img src="assets/dashboard/alert.svg">Notifikationer</div>
+        <div class="item folder"><img src="assets/dashboard/Folder.svg" alt="mappe ikon">Materialer</div>
+        <div class="item calendar"><img src="assets/dashboard/Calendar.svg" alt="kalender ikon">Skema</div>
+        <div class="item alert"><img src="assets/dashboard/alert.svg" alt="notifikations ikon">Notifikationer</div>
         <div class="item tech">Techlounge</div>
-        <div class="item mail"><img src="assets/dashboard/Messages.svg">Mail</div>
-        <div class="item favorit"><img src="assets/dashboard/Bookmark.svg">Favoritter</div>
-        <div class="item grupper"><img src="assets/dashboard/group.svg">Grupper</div>
-        <div class="item chat"><img src="assets/dashboard/chat.svg">Chat</div>
-        <div class="item sog"><img src="assets/dashboard/Search.svg">Søg</div>
-        <a href="assignments.html" class="item afleveringer"><img src="assets/dashboard/upload.svg">Afleveringer</a>
-        <div class="item aktuelt">Aktuelt</div>
-        <div class="item x1"><img src="assets/dashboard/extra.svg">Ekstra</div>
-        <div class="item x2"><img src="assets/dashboard/extra.svg">Ekstra</div>
-        <div class="item x3"><img src="assets/dashboard/extra.svg">Ekstra</div>
+        <div class="item mail"><img src="assets/dashboard/Messages.svg" alt="besked ikon">Mail</div>
+        <div class="item bookmark"><img src="assets/dashboard/Bookmark.svg" alt="bogmærke ikon">Favoritter</div>
+        <div class="item group"><img src="assets/dashboard/group.svg" alt="gruppe ikon">Grupper</div>
+        <div class="item chat"><img src="assets/dashboard/chat.svg" alt="chat ikon">Chat</div>
+        <div class="item search"><img src="assets/dashboard/Search.svg" alt="søg ikon">Søg</div>
+        <a href="assignments.html" class="item upload"><img src="assets/dashboard/upload.svg" alt="folder ikon">Afleveringer</a>
+        <div class="item news">Aktuelt</div>
+        <div class="item x1"><img src="assets/dashboard/extra.svg" alt="ekstra ikon">Ekstra</div>
+        <div class="item x2"><img src="assets/dashboard/extra.svg" alt="ekstra ikon">Ekstra</div>
+        <div class="item x3"><img src="assets/dashboard/extra.svg" alt="ekstra ikon">Ekstra</div>
     </div>
 
     <script src="script.js"></script>
-</body>
-
-</html>
+</body></html>
