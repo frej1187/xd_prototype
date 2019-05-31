@@ -56,6 +56,7 @@ header {
     z-index: 5;
 }
 
+/* Line-height sættes til 50px lige som height, dette gøres da teksten altid står i midten af line-height. Logo'et er et inline element og beregnes derfor som tekstlinje, derfor står det i midten.  */
 header .logo {
     color: #ffffff;
     height: 50px;
@@ -74,6 +75,7 @@ header nav ul {
     display: flex;
 }
 
+/*Fjerner dots så listen står uden dots eller tal foran*/
 header nav ul li {
     list-style: none;
 }
@@ -125,6 +127,7 @@ header nav ul li a {
     transition: all 0.5s ease;
 }
 
+/* Ændre aksen hvor der roteres fra*/
 .menu_toggle span:first-child {
     transform-origin: 0% 0%;
 }
@@ -194,6 +197,7 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
     color: #ea5045;
 }
 
+/* Fjerner den blå UX kant der kommer rundt om kassen i browseren, det er især ikke designvenligt når der er afrundede hjørner*/
 .login input:focus {
     outline: none;
 }
@@ -207,10 +211,12 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
     vertical-align: middle;
 }
 
+/*Fjerner default tjekboks*/
 .login .label_save_login .save_login {
     display: none;
 }
 
+/*Design af ny tjekboks - hvide cirkel*/
 .login .label_save_login .new_checkbox {
     content: "";
     display: inline-block;
@@ -223,6 +229,7 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
     position: relative;
 }
 
+/*Design af rødt afkrydsnings felt i tjekboks */
 .login .label_save_login input:checked ~ .new_checkbox::before {
     content: "";
     position: absolute;
@@ -248,6 +255,7 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
     position: relative;
 }
 
+/*facebook ikon */
 .login .login_facebook::before {
     position: absolute;
     left: 25px;
@@ -269,6 +277,7 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
 4: Dashboard side
 ----------------------------------------------*/
 
+/*Design af grid,rækker og colonner. font size og farve */
 .container {
     background-color: #FAF7F7;
     display: grid;
@@ -380,7 +389,7 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
     max-width: 500px;
     height: 50px;
     padding: 20px;
-    margin: 10px;
+    margin: 10px 0;
     border-radius: 25px;
     border: none;
     color: #ea5045;
@@ -391,8 +400,7 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
 }
 
 .upload_page .preview_url {
-    display: inline-block;
-    width: auto;
+    display: inline;
     height: 40px;
     padding: 10px 20px;
     border-radius: 20px;
@@ -410,15 +418,18 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
     color: #ffffff;
 }
 
-.upload_page h2 {
+.upload_page label {
     color: #000000;
     margin: 30px 0 7px 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
 }
 
 /*----------------------------------------------
 7: Media Queries
 ----------------------------------------------*/
-
+/* På mobil og ipad med potræt mode. */
 @media (max-width: 991px) {
 
     header {
@@ -450,15 +461,12 @@ header nav.active ~ .menu_toggle span:nth-child(1) {
     }
 }
 
+/* På landscape mode og webskærme*/
 @media (min-width: 992px) {
     header nav ul li a:hover {
         color: #F58E81;
         background-color: #ffffff;
-
     }
-}
-
-@media (min-width: 992px) {
 
     header nav ul li a {
         font-size: 1.6rem;

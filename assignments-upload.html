@@ -43,15 +43,17 @@
             <h1>Upload</h1>
             <p class="date_from"><time datetime="2019-05-28 00:00">Fra: 28-05-2019 kl. 00:00</time></p>
             <p class="date_to"><time datetime="2019-05-31 23:59">Til: 31-05-2019 kl. 23:59</time></p>
-            <h2>Opgave</h2>
-            <input type="text" value="04.01.01 - Opgavebeskrivelse - Design sprint">
-            <h2>Indsæt aflevering</h2>
-            <input type="url" value="http://fpj.dk/kea/01-web/02-html/01_02_03_styleguide/index.html">
+            <label for="field_assignment">Opgave</label>
+            <input type="text" id="field_assignment" value="04.01.01 - Opgavebeskrivelse - Design sprint">
+            <label for="field_url">Indsæt aflevering</label>
+            <input type="url" id="field_url" value="http://fpj.dk/kea/01-web/02-html/01_02_03_styleguide/index.html">
             <div class="preview_container"><button class="preview_url">Preview</button></div>
-            <h2>Gruppeaflevering</h2>
-            <input type="text" value="Freja, Cathrine, Rosa">
+            <label for="field_group">Gruppeaflevering</label>
+            <input type="text" id="field_group" value="Freja, Cathrine, Rosa">
             <input type="submit" value="Aflever">
         </form>
     </div>
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
